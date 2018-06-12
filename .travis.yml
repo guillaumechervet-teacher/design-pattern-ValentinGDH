@@ -1,0 +1,9 @@
+language: csharp
+    dist: https://github.com/guillaumechervet-teacher/design-pattern-ValentinGDH
+    mono: none
+    dotnet: 2.0.0
+    install:
+    - dotnet restore ./src/BasketTest/Basket.sln
+    script:
+    - dotnet build ./src/BasketTest/Basket.sln
+    - dotnet test ./src/BasketTest/BasketTest.csproj
